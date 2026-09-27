@@ -3,14 +3,27 @@
 The GFS **atmosphere** — a data repository of the oceansensing ocean map system: its own
 Pages site, its own schedule, its own gigabyte, holding no code of its own.
 
-**Nothing is published yet** (2026-09-27). `PLAN.md` is the founding plan;
+**Built, rehearsed and taken live 2026-09-27** — published to Pages and R2,
+not drawn on the website's map. `PLAN.md` is the founding plan;
 `CLAUDE.md` carries what must not be got wrong and the shared doc doctrine.
 
-## What it will publish
+## What it publishes
 
 NOAA's Global Forecast System at 0.25°: near-surface wind, air
 temperature and the other atmospheric fields the ECMWF layers already carry,
 as a second opinion beside them.
+
+| root | quantity | unit |
+| --- | --- | --- |
+| `wind-gfs.json` | 10 m wind, a vector pair | m s-1 (integers at 0.01) |
+| `air-gfs.json` | 2 m air temperature | degC |
+| `air850-gfs.json` | 850 hPa air temperature | degC |
+| `mslp-gfs.json` | sea-level pressure | hPa |
+| `hgt500-gfs.json` | 500 hPa geopotential height | gpm |
+| `cloud-gfs.json` | total cloud cover, instantaneous | fraction |
+| `prate-gfs.json` | precipitation rate, instantaneous | mm/h |
+
+Global, 1440 x 721 from 90 N and 0 E; 41 MB a tree (measured 2026-09-27).
 
 These products are published **operationally but not drawn on the website's
 map** — the owner's call, 2026-09-27. The map's status line still reports

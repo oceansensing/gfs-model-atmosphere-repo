@@ -25,3 +25,7 @@ One-way in the ordinary data-repository sense: moving a product between
 repositories is cheap in machinery and expensive in everything that points at
 it — roots in the contract, origins in the site's config, and the union
 `check:docs` holds across origins.
+
+## D2 — 2026-09-27 — GFS 0.25 degree, the step nearest now, global
+
+One global grid per root on the lattice every global grid here uses, the hourly step nearest now from the newest posted cycle; published, not drawn.

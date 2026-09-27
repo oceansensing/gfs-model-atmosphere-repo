@@ -1,0 +1,82 @@
+# What this repository publishes: NOAA's Global Forecast System at 0.25
+# degree — 10 m wind, 2 m and 850 hPa air temperature, sea-level pressure,
+# 500 hPa height, total cloud and precipitation rate — from the open-data
+# bucket `noaa-gfs-bdp-pds`, published, not drawn on the website's map (the
+# owner, 2026-09-27): a second opinion beside the ECMWF layers. The fetcher
+# is the site's `scripts/fetch-gfs.py` (eccodes, as the ECMWF fetcher).
+#
+# Global grids, 1440 x 721 from 90 N and 0 E, the lattice every global grid
+# here uses; 4.6-9 MB a root, 41 MB a tree (measured 2026-09-27).
+#
+# **The budget.** Four cycles a day, f000 posted 3.6-3.8 h after its cycle
+# and hourly steps to f120. Each run publishes the step nearest now, on an
+# hourly schedule: under half an hour off when published, plus an hour to
+# the next run and GitHub's lateness. 4 hours; re-measure after a week.
+
+[contract]
+check = ["node", "scripts/test-schema.mjs"]
+roots = ["node", "scripts/test-schema.mjs", "--roots"]
+
+[defaults]
+timeout_minutes = 20
+
+# Named after the server.
+[steps.gfs]
+cmd = ["python3", "scripts/fetch-gfs.py", "--only=wind-gfs,air-gfs,air850-gfs,mslp-gfs,hgt500-gfs,cloud-gfs,prate-gfs"]
+lane = "noaa-gfs-bucket"
+
+[products.wind-gfs]
+title = "GFS 10 m wind"
+step = "gfs"
+roots = ["wind-gfs.json"]
+writes = ["wind-gfs.json"]
+max_age_hours = 4
+namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=wind-gfs"]
+
+[products.air-gfs]
+title = "GFS 2 m air temperature"
+step = "gfs"
+roots = ["air-gfs.json"]
+writes = ["air-gfs.json"]
+max_age_hours = 4
+namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=air-gfs"]
+
+[products.air850-gfs]
+title = "GFS 850 hPa air temperature"
+step = "gfs"
+roots = ["air850-gfs.json"]
+writes = ["air850-gfs.json"]
+max_age_hours = 4
+namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=air850-gfs"]
+
+[products.mslp-gfs]
+title = "GFS sea-level pressure"
+step = "gfs"
+roots = ["mslp-gfs.json"]
+writes = ["mslp-gfs.json"]
+max_age_hours = 4
+namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=mslp-gfs"]
+
+[products.hgt500-gfs]
+title = "GFS 500 hPa geopotential height"
+step = "gfs"
+roots = ["hgt500-gfs.json"]
+writes = ["hgt500-gfs.json"]
+max_age_hours = 4
+namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=hgt500-gfs"]
+
+[products.cloud-gfs]
+title = "GFS total cloud cover"
+step = "gfs"
+roots = ["cloud-gfs.json"]
+writes = ["cloud-gfs.json"]
+max_age_hours = 4
+namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=cloud-gfs"]
+
+[products.prate-gfs]
+title = "GFS precipitation rate"
+step = "gfs"
+roots = ["prate-gfs.json"]
+writes = ["prate-gfs.json"]
+max_age_hours = 4
+namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=prate-gfs"]

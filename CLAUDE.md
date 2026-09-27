@@ -118,10 +118,21 @@ fact from a guess that aged.
 
 - **`PLAN.md`** — the founding plan and running record.
 - **`DECISIONS.md`** — dated one-way decisions, D1 onward.
-- **`pipeline/products.toml`** — not written yet.
+- **`pipeline/products.toml`** — the products, the step and the budget.
+- **`.github/workflows/publish.yml`** — the publish workflow.
 
 ## What must not be got wrong here
 
+- **Match messages on name, level and forecast descriptor, never on
+  number**: numbers move between hours. **Take the instant field**: cloud
+  and precipitation rate appear twice an hour, instant and averaged.
+- **The wind belts are the control on every run**: the south-east Pacific
+  trades (mean u -5.4 m/s measured) and the Southern Ocean westerlies
+  (+6.5). The first box tried, 8-20 N 180-220 E, read -1.34 — the September
+  ITCZ sits in it — and was too close to its threshold to be a control.
+- **Cloud cover takes a MEAN band, not a median one**: instantaneous GFS
+  cloud is two-humped (45% of cells at 100%), so its median sits near 98%
+  while its mean, 67%, is the planet's.
 - **Every reader in this project assumes a regular latitude/longitude
   lattice.** If the model's grid is not one, the regrid is the product, and
   it gets a positive control before its output is believed.
