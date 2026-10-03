@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "air-gfs",
+ "title": "GFS 2 m air temperature",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-03T19:25:55Z",
+ "updated": "2026-10-03T19:25:55Z",
+ "hour": "2026-10-03T19:00:00Z",
+ "modelRun": "2026-10-03T12:00:00Z",
+ "source": "NOAA NCEP GFS",
+ "hours": [
+  "2026-10-03T19:00:00Z"
+ ],
+ "files": {
+  "air-gfs.json": {
+   "bytes": 5209184,
+   "sha256": "be5ba38e2e81d7e5c804a5f1b54588825b9b052580a89831e71f255165e66dc7"
+  }
+ }
+}

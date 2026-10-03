@@ -1,0 +1,20 @@
+{
+ "schema": 1,
+ "generated": "2026-10-03T19:25:55Z",
+ "mode": "full",
+ "fates": {
+  "wind-gfs": "fresh",
+  "air-gfs": "fresh",
+  "air850-gfs": "fresh",
+  "mslp-gfs": "fresh",
+  "hgt500-gfs": "fresh",
+  "cloud-gfs": "fresh",
+  "prate-gfs": "fresh"
+ },
+ "reasons": {},
+ "built": {},
+ "withheld": {},
+ "deploy": true,
+ "notes": [],
+ "behind": []
+}
