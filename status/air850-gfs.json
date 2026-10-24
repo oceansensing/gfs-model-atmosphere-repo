@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "air850-gfs",
+ "title": "GFS 850 hPa air temperature",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-24T16:34:08Z",
+ "updated": "2026-10-24T16:34:08Z",
+ "hour": "2026-10-24T17:00:00Z",
+ "modelRun": "2026-10-24T12:00:00Z",
+ "source": "NOAA NCEP GFS",
+ "hours": [
+  "2026-10-24T17:00:00Z"
+ ],
+ "files": {
+  "air850-gfs.json": {
+   "bytes": 5259838,
+   "sha256": "a535aad3acd4de3b229cfdeac131bcda8e9f95a0d7bc1df48ab64c008bea1292"
+  }
+ }
+}
