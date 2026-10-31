@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "wind-gfs",
+ "title": "GFS 10 m wind",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-31T12:29:52Z",
+ "updated": "2026-10-31T12:29:52Z",
+ "hour": "2026-10-31T12:00:00Z",
+ "modelRun": "2026-10-31T06:00:00Z",
+ "source": "NOAA NCEP GFS",
+ "hours": [
+  "2026-10-31T12:00:00Z"
+ ],
+ "files": {
+  "wind-gfs.json": {
+   "bytes": 9018795,
+   "sha256": "4be2a9ee3710d460179bc3be1b5c56f5741b8cce0373502fb7e7d0a42f71f279"
+  }
+ }
+}

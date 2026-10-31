@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "cloud-gfs",
+ "title": "GFS total cloud cover",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-10-31T12:29:52Z",
+ "updated": "2026-10-31T12:29:52Z",
+ "hour": "2026-10-31T12:00:00Z",
+ "modelRun": "2026-10-31T06:00:00Z",
+ "source": "NOAA NCEP GFS",
+ "hours": [
+  "2026-10-31T12:00:00Z"
+ ],
+ "files": {
+  "cloud-gfs.json": {
+   "bytes": 4603259,
+   "sha256": "93e0e825b6ea15968a77e50b64363780ad74e03b220b086bf4ea07a7fc80a6df"
+  }
+ }
+}
