@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "hgt500-gfs",
+ "title": "GFS 500 hPa geopotential height",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-07T19:29:10Z",
+ "updated": "2026-11-07T19:29:10Z",
+ "hour": "2026-11-07T19:00:00Z",
+ "modelRun": "2026-11-07T12:00:00Z",
+ "source": "NOAA NCEP GFS",
+ "hours": [
+  "2026-11-07T19:00:00Z"
+ ],
+ "files": {
+  "hgt500-gfs.json": {
+   "bytes": 5191388,
+   "sha256": "de00d0bfaa00ae8b661adbff1540b27b0d74df2254ed88c0e7e16ef7c214a035"
+  }
+ }
+}
