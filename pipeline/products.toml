@@ -12,6 +12,19 @@
 # and hourly steps to f120. Each run publishes the step nearest now, on an
 # hourly schedule: under half an hour off when published, plus an hour to
 # the next run and GitHub's lateness. 4 hours; re-measure after a week.
+#
+# **To the second host alone since 2026-11-08** (`r2_only`, the site
+# pipeline's D13): no layer here is drawn on the website, so Pages carries
+# this origin's status and nothing else. **And the 10 m wind and the 2 m and
+# 850 hPa air temperature a day either side, hourly**: each base lists in its
+# `frames` the next 24 hours of its cycle and the 24 behind that earlier runs
+# published, every other hour a file named for its time (`<root>.v*.json`).
+# About 20 MB an hour for the three, some 960 MB with both days full, so those
+# dated files are remembered on R2 and not on the `published` branch
+# (`memory = "r2"`, the site pipeline's D15): each run reads them back first
+# with a read-only token. A run reads from the bucket only the hour entering
+# the day ahead, and a new cycle its 25 (3.6 MB an hour, measured on the 12Z
+# cycle of 2026-11-08).
 
 [contract]
 check = ["node", "scripts/test-schema.mjs"]
@@ -29,7 +42,9 @@ lane = "noaa-gfs-bucket"
 title = "GFS 10 m wind"
 step = "gfs"
 roots = ["wind-gfs.json"]
-writes = ["wind-gfs.json"]
+writes = ["wind-gfs.json", "wind-gfs.v*.json"]
+r2_only = true
+memory = "r2"
 max_age_hours = 4
 namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=wind-gfs"]
 
@@ -37,7 +52,9 @@ namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=wind-gfs"
 title = "GFS 2 m air temperature"
 step = "gfs"
 roots = ["air-gfs.json"]
-writes = ["air-gfs.json"]
+writes = ["air-gfs.json", "air-gfs.v*.json"]
+r2_only = true
+memory = "r2"
 max_age_hours = 4
 namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=air-gfs"]
 
@@ -45,7 +62,9 @@ namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=air-gfs"]
 title = "GFS 850 hPa air temperature"
 step = "gfs"
 roots = ["air850-gfs.json"]
-writes = ["air850-gfs.json"]
+writes = ["air850-gfs.json", "air850-gfs.v*.json"]
+r2_only = true
+memory = "r2"
 max_age_hours = 4
 namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=air850-gfs"]
 
@@ -54,6 +73,7 @@ title = "GFS sea-level pressure"
 step = "gfs"
 roots = ["mslp-gfs.json"]
 writes = ["mslp-gfs.json"]
+r2_only = true
 max_age_hours = 4
 namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=mslp-gfs"]
 
@@ -62,6 +82,7 @@ title = "GFS 500 hPa geopotential height"
 step = "gfs"
 roots = ["hgt500-gfs.json"]
 writes = ["hgt500-gfs.json"]
+r2_only = true
 max_age_hours = 4
 namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=hgt500-gfs"]
 
@@ -70,6 +91,7 @@ title = "GFS total cloud cover"
 step = "gfs"
 roots = ["cloud-gfs.json"]
 writes = ["cloud-gfs.json"]
+r2_only = true
 max_age_hours = 4
 namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=cloud-gfs"]
 
@@ -78,5 +100,6 @@ title = "GFS precipitation rate"
 step = "gfs"
 roots = ["prate-gfs.json"]
 writes = ["prate-gfs.json"]
+r2_only = true
 max_age_hours = 4
 namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=prate-gfs"]

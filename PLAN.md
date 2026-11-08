@@ -38,6 +38,18 @@ product `fresh` (7 of 7), the nearest frame 0.4 h
 from the reader. The schedule `25 * * * *` was then turned on (longest gap
 1 h, so the watchdog's silence budget is 3 h).
 
+## 2026-11-08 — R2 alone, and three products a day either side (D3)
+
+Every product `r2_only`; the wind and the two air temperatures list the next
+24 hours of their cycle and the 24 behind, hourly, their dated files
+remembered on R2 rather than on the branch (`memory = "r2"`) and read back by
+the workflow's new first step with a read-only token
+(`R2_READ_ACCESS_KEY_ID`, `R2_READ_SECRET_ACCESS_KEY`). **Measured** on a
+sample against the bucket (the 12Z cycle): a run an hour on reads the one hour
+entering the day, 9 requests and 6.9 MB — what a run reads today — and a new
+cycle reads its 25, 129 requests and 92.5 MB, four times a day. Files 9.1,
+5.3 and 5.3 MB an hour; about 980 MB with both days full.
+
 ## The workflow's packages come from the site — 2026-09-27
 
 The publish workflow installs `site/scripts/requirements-gfs.txt`, one file

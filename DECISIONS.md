@@ -29,3 +29,19 @@ it — roots in the contract, origins in the site's config, and the union
 ## D2 — 2026-09-27 — GFS 0.25 degree, the step nearest now, global
 
 One global grid per root on the lattice every global grid here uses, the hourly step nearest now from the newest posted cycle; published, not drawn.
+
+## D3 — 2026-11-08 — To R2 alone, and the wind and air temperatures a day either side, remembered on R2
+
+**Every product to the second host alone** (`r2_only`, the site pipeline's
+D13): none is drawn on the website's map, so GitHub Pages carries this
+origin's status and nothing else. **The 10 m wind and the 2 m and 850 hPa air
+temperature a day either side, hourly**: each base lists in D31's `frames`
+the next 24 hours of its cycle and the 24 behind that earlier runs published,
+every other hour a file named for its time (`<root>.v<time>.json`), its
+header saying its `lead`. About 980 MB with both days full — too much for the
+`published` branch, force-pushed every hour — so those dated files are
+remembered on R2 (`memory = "r2"`, the site pipeline's D15) and each run reads
+them back first with a read-only token; the roots stay on the branch.
+
+One-way in the ordinary sense: the dated files are a shape readers will code
+against, and a product moved back to Pages would carry a gigabyte there.

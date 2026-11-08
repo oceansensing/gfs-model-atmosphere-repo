@@ -4,7 +4,8 @@ The GFS **atmosphere** — a data repository of the oceansensing ocean map syste
 Pages site, its own schedule, its own gigabyte, holding no code of its own.
 
 **Built, rehearsed and taken live 2026-09-27** — published to Pages and R2,
-not drawn on the website's map. `PLAN.md` is the founding plan;
+not drawn on the website's map; **to R2 alone since 2026-11-08** (D3), Pages
+carrying its status. `PLAN.md` is the founding plan;
 `CLAUDE.md` carries what must not be got wrong and the shared doc doctrine.
 
 ## What it publishes
@@ -24,6 +25,10 @@ as a second opinion beside them.
 | `prate-gfs.json` | precipitation rate, instantaneous | mm/h |
 
 Global, 1440 x 721 from 90 N and 0 E; 41 MB a tree (measured 2026-09-27).
+
+**The wind and both air temperatures a day either side, hourly** (D3): each
+root lists in its `frames` the next 24 hours of its cycle and the 24 behind,
+every other hour a file named for its time, `<root>.v<YYYYMMDDTHHMMZ>.json`.
 
 These products are published **operationally but not drawn on the website's
 map** — the owner's call, 2026-09-27. The map's status line still reports
