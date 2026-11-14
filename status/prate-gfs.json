@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "prate-gfs",
+ "title": "GFS precipitation rate",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-14T20:30:41Z",
+ "updated": "2026-11-14T20:30:41Z",
+ "hour": "2026-11-14T20:00:00Z",
+ "modelRun": "2026-11-14T12:00:00Z",
+ "source": "NOAA NCEP GFS",
+ "hours": [
+  "2026-11-14T20:00:00Z"
+ ],
+ "files": {
+  "prate-gfs.json": {
+   "bytes": 4569235,
+   "sha256": "6810ad19b577d5bb64dd2fbe37a6ec156f7bb7d053fc39b4292a14a325746ea8"
+  }
+ }
+}

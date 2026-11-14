@@ -1,0 +1,158 @@
+{
+ "schema": 2,
+ "contract": 1,
+ "generated": "2026-11-14T20:30:41Z",
+ "mode": "full",
+ "run": {
+  "id": "43637690842",
+  "url": "https://github.com/oceansensing/gfs-model-atmosphere-repo/actions/runs/43637690842"
+ },
+ "schedule": {
+  "crons": [
+   "25 * * * *"
+  ],
+  "longestGapHours": 1.0
+ },
+ "products": {
+  "wind-gfs": {
+   "title": "GFS 10 m wind",
+   "roots": [
+    "wind-gfs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-11-14T20:30:41Z",
+   "updated": "2026-11-14T20:30:41Z",
+   "hour": "2026-11-14T20:00:00Z",
+   "modelRun": "2026-11-14T12:00:00Z",
+   "source": "NOAA NCEP GFS",
+   "hours": [
+    "2026-11-14T20:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 0.51,
+   "nearestOffsetHours": 0.51
+  },
+  "air-gfs": {
+   "title": "GFS 2 m air temperature",
+   "roots": [
+    "air-gfs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-11-14T20:30:41Z",
+   "updated": "2026-11-14T20:30:41Z",
+   "hour": "2026-11-14T20:00:00Z",
+   "modelRun": "2026-11-14T12:00:00Z",
+   "source": "NOAA NCEP GFS",
+   "hours": [
+    "2026-11-14T20:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 0.51,
+   "nearestOffsetHours": 0.51
+  },
+  "air850-gfs": {
+   "title": "GFS 850 hPa air temperature",
+   "roots": [
+    "air850-gfs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-11-14T20:30:41Z",
+   "updated": "2026-11-14T20:30:41Z",
+   "hour": "2026-11-14T20:00:00Z",
+   "modelRun": "2026-11-14T12:00:00Z",
+   "source": "NOAA NCEP GFS",
+   "hours": [
+    "2026-11-14T20:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 0.51,
+   "nearestOffsetHours": 0.51
+  },
+  "mslp-gfs": {
+   "title": "GFS sea-level pressure",
+   "roots": [
+    "mslp-gfs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-11-14T20:30:41Z",
+   "updated": "2026-11-14T20:30:41Z",
+   "hour": "2026-11-14T20:00:00Z",
+   "modelRun": "2026-11-14T12:00:00Z",
+   "source": "NOAA NCEP GFS",
+   "hours": [
+    "2026-11-14T20:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 0.51,
+   "nearestOffsetHours": 0.51
+  },
+  "hgt500-gfs": {
+   "title": "GFS 500 hPa geopotential height",
+   "roots": [
+    "hgt500-gfs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-11-14T20:30:41Z",
+   "updated": "2026-11-14T20:30:41Z",
+   "hour": "2026-11-14T20:00:00Z",
+   "modelRun": "2026-11-14T12:00:00Z",
+   "source": "NOAA NCEP GFS",
+   "hours": [
+    "2026-11-14T20:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 0.51,
+   "nearestOffsetHours": 0.51
+  },
+  "cloud-gfs": {
+   "title": "GFS total cloud cover",
+   "roots": [
+    "cloud-gfs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-11-14T20:30:41Z",
+   "updated": "2026-11-14T20:30:41Z",
+   "hour": "2026-11-14T20:00:00Z",
+   "modelRun": "2026-11-14T12:00:00Z",
+   "source": "NOAA NCEP GFS",
+   "hours": [
+    "2026-11-14T20:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 0.51,
+   "nearestOffsetHours": 0.51
+  },
+  "prate-gfs": {
+   "title": "GFS precipitation rate",
+   "roots": [
+    "prate-gfs.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-11-14T20:30:41Z",
+   "updated": "2026-11-14T20:30:41Z",
+   "hour": "2026-11-14T20:00:00Z",
+   "modelRun": "2026-11-14T12:00:00Z",
+   "source": "NOAA NCEP GFS",
+   "hours": [
+    "2026-11-14T20:00:00Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 0.51,
+   "nearestOffsetHours": 0.51
+  }
+ }
+}
