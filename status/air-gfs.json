@@ -1,0 +1,165 @@
+{
+ "schema": 1,
+ "product": "air-gfs",
+ "title": "GFS 2 m air temperature",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-21T16:32:32Z",
+ "updated": "2026-11-21T16:32:32Z",
+ "hour": "2026-11-21T16:00:00Z",
+ "modelRun": "2026-11-21T12:00:00Z",
+ "source": "NOAA NCEP GFS",
+ "hours": [
+  "2026-11-21T16:00:00Z"
+ ],
+ "files": {
+  "air-gfs.json": {
+   "bytes": 5267528,
+   "sha256": "1c2e07efedd68bb9886a023726605167c764d0c794591e5b3be82f0a2a7d0cc4"
+  },
+  "air-gfs.v20261120T1600Z.json": {
+   "bytes": 5262684
+  },
+  "air-gfs.v20261120T1700Z.json": {
+   "bytes": 5259558
+  },
+  "air-gfs.v20261120T1800Z.json": {
+   "bytes": 5257381
+  },
+  "air-gfs.v20261120T1900Z.json": {
+   "bytes": 5255820
+  },
+  "air-gfs.v20261120T2000Z.json": {
+   "bytes": 5253971
+  },
+  "air-gfs.v20261120T2100Z.json": {
+   "bytes": 5252951
+  },
+  "air-gfs.v20261120T2200Z.json": {
+   "bytes": 5253768
+  },
+  "air-gfs.v20261120T2300Z.json": {
+   "bytes": 5255543
+  },
+  "air-gfs.v20261121T0000Z.json": {
+   "bytes": 5257232
+  },
+  "air-gfs.v20261121T0100Z.json": {
+   "bytes": 5257695
+  },
+  "air-gfs.v20261121T0200Z.json": {
+   "bytes": 5255465
+  },
+  "air-gfs.v20261121T0300Z.json": {
+   "bytes": 5252792
+  },
+  "air-gfs.v20261121T0400Z.json": {
+   "bytes": 5251258
+  },
+  "air-gfs.v20261121T0500Z.json": {
+   "bytes": 5251068
+  },
+  "air-gfs.v20261121T0600Z.json": {
+   "bytes": 5251492
+  },
+  "air-gfs.v20261121T0700Z.json": {
+   "bytes": 5253964
+  },
+  "air-gfs.v20261121T0800Z.json": {
+   "bytes": 5256362
+  },
+  "air-gfs.v20261121T0900Z.json": {
+   "bytes": 5259396
+  },
+  "air-gfs.v20261121T1000Z.json": {
+   "bytes": 5262803
+  },
+  "air-gfs.v20261121T1100Z.json": {
+   "bytes": 5265569
+  },
+  "air-gfs.v20261121T1200Z.json": {
+   "bytes": 5266341
+  },
+  "air-gfs.v20261121T1300Z.json": {
+   "bytes": 5265664
+  },
+  "air-gfs.v20261121T1400Z.json": {
+   "bytes": 5265625
+  },
+  "air-gfs.v20261121T1500Z.json": {
+   "bytes": 5265467
+  },
+  "air-gfs.v20261121T1700Z.json": {
+   "bytes": 5258229
+  },
+  "air-gfs.v20261121T1800Z.json": {
+   "bytes": 5256214
+  },
+  "air-gfs.v20261121T1900Z.json": {
+   "bytes": 5254148
+  },
+  "air-gfs.v20261121T2000Z.json": {
+   "bytes": 5252906
+  },
+  "air-gfs.v20261121T2100Z.json": {
+   "bytes": 5252218
+  },
+  "air-gfs.v20261121T2200Z.json": {
+   "bytes": 5251178
+  },
+  "air-gfs.v20261121T2300Z.json": {
+   "bytes": 5251931
+  },
+  "air-gfs.v20261122T0000Z.json": {
+   "bytes": 5253156
+  },
+  "air-gfs.v20261122T0100Z.json": {
+   "bytes": 5252592
+  },
+  "air-gfs.v20261122T0200Z.json": {
+   "bytes": 5250876
+  },
+  "air-gfs.v20261122T0300Z.json": {
+   "bytes": 5248706
+  },
+  "air-gfs.v20261122T0400Z.json": {
+   "bytes": 5247448
+  },
+  "air-gfs.v20261122T0500Z.json": {
+   "bytes": 5246484
+  },
+  "air-gfs.v20261122T0600Z.json": {
+   "bytes": 5246254
+  },
+  "air-gfs.v20261122T0700Z.json": {
+   "bytes": 5246350
+  },
+  "air-gfs.v20261122T0800Z.json": {
+   "bytes": 5248206
+  },
+  "air-gfs.v20261122T0900Z.json": {
+   "bytes": 5250855
+  },
+  "air-gfs.v20261122T1000Z.json": {
+   "bytes": 5253610
+  },
+  "air-gfs.v20261122T1100Z.json": {
+   "bytes": 5257060
+  },
+  "air-gfs.v20261122T1200Z.json": {
+   "bytes": 5259101
+  },
+  "air-gfs.v20261122T1300Z.json": {
+   "bytes": 5259505
+  },
+  "air-gfs.v20261122T1400Z.json": {
+   "bytes": 5259884
+  },
+  "air-gfs.v20261122T1500Z.json": {
+   "bytes": 5259010
+  },
+  "air-gfs.v20261122T1600Z.json": {
+   "bytes": 5255922
+  }
+ }
+}

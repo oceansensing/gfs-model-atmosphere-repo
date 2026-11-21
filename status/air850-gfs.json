@@ -1,0 +1,165 @@
+{
+ "schema": 1,
+ "product": "air850-gfs",
+ "title": "GFS 850 hPa air temperature",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-21T16:32:32Z",
+ "updated": "2026-11-21T16:32:32Z",
+ "hour": "2026-11-21T16:00:00Z",
+ "modelRun": "2026-11-21T12:00:00Z",
+ "source": "NOAA NCEP GFS",
+ "hours": [
+  "2026-11-21T16:00:00Z"
+ ],
+ "files": {
+  "air850-gfs.json": {
+   "bytes": 5289427,
+   "sha256": "715bc74cc72c9d4e7d4c1cae29738ce9f57ae071da75a05428f6d9c5ef51a461"
+  },
+  "air850-gfs.v20261120T1600Z.json": {
+   "bytes": 5288478
+  },
+  "air850-gfs.v20261120T1700Z.json": {
+   "bytes": 5288927
+  },
+  "air850-gfs.v20261120T1800Z.json": {
+   "bytes": 5289490
+  },
+  "air850-gfs.v20261120T1900Z.json": {
+   "bytes": 5289564
+  },
+  "air850-gfs.v20261120T2000Z.json": {
+   "bytes": 5289865
+  },
+  "air850-gfs.v20261120T2100Z.json": {
+   "bytes": 5290157
+  },
+  "air850-gfs.v20261120T2200Z.json": {
+   "bytes": 5291272
+  },
+  "air850-gfs.v20261120T2300Z.json": {
+   "bytes": 5291551
+  },
+  "air850-gfs.v20261121T0000Z.json": {
+   "bytes": 5291767
+  },
+  "air850-gfs.v20261121T0100Z.json": {
+   "bytes": 5292224
+  },
+  "air850-gfs.v20261121T0200Z.json": {
+   "bytes": 5292411
+  },
+  "air850-gfs.v20261121T0300Z.json": {
+   "bytes": 5292228
+  },
+  "air850-gfs.v20261121T0400Z.json": {
+   "bytes": 5292500
+  },
+  "air850-gfs.v20261121T0500Z.json": {
+   "bytes": 5291726
+  },
+  "air850-gfs.v20261121T0600Z.json": {
+   "bytes": 5290620
+  },
+  "air850-gfs.v20261121T0700Z.json": {
+   "bytes": 5288856
+  },
+  "air850-gfs.v20261121T0800Z.json": {
+   "bytes": 5287968
+  },
+  "air850-gfs.v20261121T0900Z.json": {
+   "bytes": 5286774
+  },
+  "air850-gfs.v20261121T1000Z.json": {
+   "bytes": 5286991
+  },
+  "air850-gfs.v20261121T1100Z.json": {
+   "bytes": 5285520
+  },
+  "air850-gfs.v20261121T1200Z.json": {
+   "bytes": 5284464
+  },
+  "air850-gfs.v20261121T1300Z.json": {
+   "bytes": 5283613
+  },
+  "air850-gfs.v20261121T1400Z.json": {
+   "bytes": 5283615
+  },
+  "air850-gfs.v20261121T1500Z.json": {
+   "bytes": 5283823
+  },
+  "air850-gfs.v20261121T1700Z.json": {
+   "bytes": 5283607
+  },
+  "air850-gfs.v20261121T1800Z.json": {
+   "bytes": 5282930
+  },
+  "air850-gfs.v20261121T1900Z.json": {
+   "bytes": 5281986
+  },
+  "air850-gfs.v20261121T2000Z.json": {
+   "bytes": 5281298
+  },
+  "air850-gfs.v20261121T2100Z.json": {
+   "bytes": 5280926
+  },
+  "air850-gfs.v20261121T2200Z.json": {
+   "bytes": 5281201
+  },
+  "air850-gfs.v20261121T2300Z.json": {
+   "bytes": 5281717
+  },
+  "air850-gfs.v20261122T0000Z.json": {
+   "bytes": 5282900
+  },
+  "air850-gfs.v20261122T0100Z.json": {
+   "bytes": 5283969
+  },
+  "air850-gfs.v20261122T0200Z.json": {
+   "bytes": 5284837
+  },
+  "air850-gfs.v20261122T0300Z.json": {
+   "bytes": 5286144
+  },
+  "air850-gfs.v20261122T0400Z.json": {
+   "bytes": 5287064
+  },
+  "air850-gfs.v20261122T0500Z.json": {
+   "bytes": 5288145
+  },
+  "air850-gfs.v20261122T0600Z.json": {
+   "bytes": 5288181
+  },
+  "air850-gfs.v20261122T0700Z.json": {
+   "bytes": 5288488
+  },
+  "air850-gfs.v20261122T0800Z.json": {
+   "bytes": 5288490
+  },
+  "air850-gfs.v20261122T0900Z.json": {
+   "bytes": 5288574
+  },
+  "air850-gfs.v20261122T1000Z.json": {
+   "bytes": 5288404
+  },
+  "air850-gfs.v20261122T1100Z.json": {
+   "bytes": 5288229
+  },
+  "air850-gfs.v20261122T1200Z.json": {
+   "bytes": 5288392
+  },
+  "air850-gfs.v20261122T1300Z.json": {
+   "bytes": 5289237
+  },
+  "air850-gfs.v20261122T1400Z.json": {
+   "bytes": 5290271
+  },
+  "air850-gfs.v20261122T1500Z.json": {
+   "bytes": 5291881
+  },
+  "air850-gfs.v20261122T1600Z.json": {
+   "bytes": 5293118
+  }
+ }
+}

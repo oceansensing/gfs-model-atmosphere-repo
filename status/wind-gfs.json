@@ -1,0 +1,165 @@
+{
+ "schema": 1,
+ "product": "wind-gfs",
+ "title": "GFS 10 m wind",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-21T16:32:32Z",
+ "updated": "2026-11-21T16:32:32Z",
+ "hour": "2026-11-21T16:00:00Z",
+ "modelRun": "2026-11-21T12:00:00Z",
+ "source": "NOAA NCEP GFS",
+ "hours": [
+  "2026-11-21T16:00:00Z"
+ ],
+ "files": {
+  "wind-gfs.json": {
+   "bytes": 9091875,
+   "sha256": "3bd85d0f942367473fb774722321ac3a8230aa2164154772df0d363aff9755d6"
+  },
+  "wind-gfs.v20261120T1600Z.json": {
+   "bytes": 9056668
+  },
+  "wind-gfs.v20261120T1700Z.json": {
+   "bytes": 9050499
+  },
+  "wind-gfs.v20261120T1800Z.json": {
+   "bytes": 9044530
+  },
+  "wind-gfs.v20261120T1900Z.json": {
+   "bytes": 9043000
+  },
+  "wind-gfs.v20261120T2000Z.json": {
+   "bytes": 9044364
+  },
+  "wind-gfs.v20261120T2100Z.json": {
+   "bytes": 9043432
+  },
+  "wind-gfs.v20261120T2200Z.json": {
+   "bytes": 9050299
+  },
+  "wind-gfs.v20261120T2300Z.json": {
+   "bytes": 9050803
+  },
+  "wind-gfs.v20261121T0000Z.json": {
+   "bytes": 9049054
+  },
+  "wind-gfs.v20261121T0100Z.json": {
+   "bytes": 9046174
+  },
+  "wind-gfs.v20261121T0200Z.json": {
+   "bytes": 9047411
+  },
+  "wind-gfs.v20261121T0300Z.json": {
+   "bytes": 9047263
+  },
+  "wind-gfs.v20261121T0400Z.json": {
+   "bytes": 9057545
+  },
+  "wind-gfs.v20261121T0500Z.json": {
+   "bytes": 9061978
+  },
+  "wind-gfs.v20261121T0600Z.json": {
+   "bytes": 9064090
+  },
+  "wind-gfs.v20261121T0700Z.json": {
+   "bytes": 9064295
+  },
+  "wind-gfs.v20261121T0800Z.json": {
+   "bytes": 9064115
+  },
+  "wind-gfs.v20261121T0900Z.json": {
+   "bytes": 9063675
+  },
+  "wind-gfs.v20261121T1000Z.json": {
+   "bytes": 9072286
+  },
+  "wind-gfs.v20261121T1100Z.json": {
+   "bytes": 9075373
+  },
+  "wind-gfs.v20261121T1200Z.json": {
+   "bytes": 9076558
+  },
+  "wind-gfs.v20261121T1300Z.json": {
+   "bytes": 9079717
+  },
+  "wind-gfs.v20261121T1400Z.json": {
+   "bytes": 9080627
+  },
+  "wind-gfs.v20261121T1500Z.json": {
+   "bytes": 9076317
+  },
+  "wind-gfs.v20261121T1700Z.json": {
+   "bytes": 9077435
+  },
+  "wind-gfs.v20261121T1800Z.json": {
+   "bytes": 9076249
+  },
+  "wind-gfs.v20261121T1900Z.json": {
+   "bytes": 9075170
+  },
+  "wind-gfs.v20261121T2000Z.json": {
+   "bytes": 9074897
+  },
+  "wind-gfs.v20261121T2100Z.json": {
+   "bytes": 9072239
+  },
+  "wind-gfs.v20261121T2200Z.json": {
+   "bytes": 9068439
+  },
+  "wind-gfs.v20261121T2300Z.json": {
+   "bytes": 9067743
+  },
+  "wind-gfs.v20261122T0000Z.json": {
+   "bytes": 9071044
+  },
+  "wind-gfs.v20261122T0100Z.json": {
+   "bytes": 9075310
+  },
+  "wind-gfs.v20261122T0200Z.json": {
+   "bytes": 9076939
+  },
+  "wind-gfs.v20261122T0300Z.json": {
+   "bytes": 9078923
+  },
+  "wind-gfs.v20261122T0400Z.json": {
+   "bytes": 9077816
+  },
+  "wind-gfs.v20261122T0500Z.json": {
+   "bytes": 9075624
+  },
+  "wind-gfs.v20261122T0600Z.json": {
+   "bytes": 9077835
+  },
+  "wind-gfs.v20261122T0700Z.json": {
+   "bytes": 9080854
+  },
+  "wind-gfs.v20261122T0800Z.json": {
+   "bytes": 9082430
+  },
+  "wind-gfs.v20261122T0900Z.json": {
+   "bytes": 9083473
+  },
+  "wind-gfs.v20261122T1000Z.json": {
+   "bytes": 9085148
+  },
+  "wind-gfs.v20261122T1100Z.json": {
+   "bytes": 9087482
+  },
+  "wind-gfs.v20261122T1200Z.json": {
+   "bytes": 9090446
+  },
+  "wind-gfs.v20261122T1300Z.json": {
+   "bytes": 9097081
+  },
+  "wind-gfs.v20261122T1400Z.json": {
+   "bytes": 9102980
+  },
+  "wind-gfs.v20261122T1500Z.json": {
+   "bytes": 9104076
+  },
+  "wind-gfs.v20261122T1600Z.json": {
+   "bytes": 9100948
+  }
+ }
+}
