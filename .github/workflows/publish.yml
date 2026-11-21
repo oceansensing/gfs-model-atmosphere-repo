@@ -7,9 +7,12 @@
 # a tree (build, Pages and R2 all green).
 #
 # Needs, from the owner: `PIPELINES_SSH_KEY` (this repository's read-only
-# deploy key on oceansensing.github.io), the organization's three R2_*
-# secrets, and since 2026-11-08 its read-only pair, R2_READ_ACCESS_KEY_ID and
-# R2_READ_SECRET_ACCESS_KEY (the site pipeline's D15).
+# deploy key on oceansensing.github.io) and the organization's three R2_*
+# secrets. **Nothing is read back from R2 since 2026-11-21** (D4; the site
+# pipeline's D16, `memory = "r2-kept"`): R2 keeps every dated file a base
+# lists, so the step that read them back with the read-only pair,
+# R2_READ_ACCESS_KEY_ID and R2_READ_SECRET_ACCESS_KEY (2026-11-08 to 11-21,
+# the site pipeline's D15), is gone, and no step here is handed that pair.
 
 name: Publish
 
@@ -64,22 +67,6 @@ jobs:
         with:
           ref: published
           path: published
-      # What three products remember on R2 rather than on the branch: their
-      # dated files a day either side (the site pipeline's D15), read back into
-      # the last publish's checkout before the seed copies it to the stage.
-      # The read-only token alone: this job runs the fetchers. **Before Python
-      # is set up and anything is installed** (2026-11-09): the step runs the
-      # runner's own Python and the standard library, so no package pip brings
-      # can run with the token in its environment.
-      - name: Read back what R2 remembers
-        env:
-          PIPELINE_ROOT: ${{ github.workspace }}
-          AWS_ACCESS_KEY_ID: ${{ secrets.R2_READ_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_READ_SECRET_ACCESS_KEY }}
-          R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
-          AWS_REQUEST_CHECKSUM_CALCULATION: when_required
-          AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
-        run: python3 site/pipeline/orchestrate.py seed-r2
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: '3.12'

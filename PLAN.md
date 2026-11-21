@@ -50,6 +50,35 @@ entering the day, 9 requests and 6.9 MB — what a run reads today — and a new
 cycle reads its 25, 129 requests and 92.5 MB, four times a day. Files 9.1,
 5.3 and 5.3 MB an hour; about 980 MB with both days full.
 
+## 2026-11-21 — every product two days ahead and one behind, R2 keeping what a base lists (D4)
+
+Every product `hours_ahead = 48`, `hours_behind = 24` and `memory = "r2-kept"`
+(the site pipeline's D16), each `writes` naming its dated frames; the
+workflow's read-back step and its read-only token gone; the step thirty
+minutes. The wind's and air temperatures' `frames` list the day either side
+they listed before, and every other hour is in `moreFrames`: theirs from 25 to
+48 ahead, and every hour of the other four, their base among them. **A run
+reads its last base's listing for what it has published**, so it asks NOAA for
+the base's own hour and the hours its cycle had not given.
+
+**Measured** the same afternoon. NOAA posts a cycle's hours out of order — of
+each of four cycles' 209 indexes (11-20 18Z to 11-21 12Z), 54 to 68 were
+posted before an earlier hour's; at 21:47 UTC the 18Z cycle had f019 to f038
+and not f017 or f018 — so a cycle is taken once every hour of its day ahead
+is posted, and its second day is listed as far as it is posted without a gap.
+In those four and the 18Z, every hour to f048 was posted 3 h 58 min to
+4 h 15 min after its cycle, 5 to 34 minutes after its f024: the run at 25 past
+the fourth hour finds both days whole. **Rehearsed** through the orchestrator from the live `published`
+branch, on a new cycle (18Z, base 22Z): 392 messages, 336.1 MB and 49 indexes
+from the bucket, 4 min 41 s end to end, the contract green, 357 entries for R2
+(2.0 GB), 350 dated frames left off the branch (39 MB). A second run on top of the first's output, an hour
+on (base 23Z, the stage the first's branch alone): 16 messages, 13.8 MB and two
+indexes, 21 s, 28 entries for R2 (157 MB), the base's hour read again byte for
+byte what the first run sent — so its R2 publish, planned over the bucket the
+first left, sends 24 files and keeps 402 hours, none dropped. Before, under D3:
+an hour on 9 requests and 6.9 MB, a new cycle 92.5 MB for the three, and 159
+files, 1,039.7 MB, read back from R2 every run (the run of 22:28 UTC that day).
+
 ## The workflow's packages come from the site — 2026-09-27
 
 The publish workflow installs `site/scripts/requirements-gfs.txt`, one file

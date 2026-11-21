@@ -26,9 +26,16 @@ as a second opinion beside them.
 
 Global, 1440 x 721 from 90 N and 0 E; 41 MB a tree (measured 2026-09-27).
 
-**The wind and both air temperatures a day either side, hourly** (D3): each
-root lists in its `frames` the next 24 hours of its cycle and the 24 behind,
-every other hour a file named for its time, `<root>.v<YYYYMMDDTHHMMZ>.json`.
+**Every product two days ahead and one behind, hourly** (D4, since
+2026-11-21; the wind and both air temperatures a day either side since
+2026-11-08, D3): each root lists the hours of its cycle to 48 ahead and the
+24 behind that earlier runs published, every other hour a file named for its
+time, `<root>.v<YYYYMMDDTHHMMZ>.json`. The wind's and the air temperatures'
+`frames` keep the day either side they listed before; every hour past it is
+in `moreFrames` — theirs from 25 to 48 ahead, and all of the other four's,
+whose bases list no `frames`. Some 3 GB with every window full, on R2 alone:
+R2 keeps every dated file a base lists, and none is on the `published`
+branch.
 
 These products are published **operationally but not drawn on the website's
 map** — the owner's call, 2026-09-27. The map's status line still reports

@@ -45,3 +45,27 @@ them back first with a read-only token; the roots stay on the branch.
 
 One-way in the ordinary sense: the dated files are a shape readers will code
 against, and a product moved back to Pages would carry a gigabyte there.
+
+## D4 — 2026-11-21 — Every product two days ahead and one behind, `frames` kept as it was, R2 keeping what a base lists
+
+**Every product's window is 48 hours ahead and 24 behind, hourly**, said in
+`pipeline/products.toml` (`hours_ahead = 48`, `hours_behind = 24`; the site
+pipeline's D16, the owner's call of 2026-11-21). **`frames`
+keeps exactly what it listed before**: the wind's and the two air
+temperatures' day either side, and nothing for the other four; **every hour
+past it is in `moreFrames`**, a list of its own — the three's 25 to 48 ahead,
+and every hour of the four, their base among them. A reader taking both
+lists has every hour once.
+
+**R2 keeps every dated file a base lists** (`memory = "r2-kept"`, the site
+pipeline's D16), replacing D3's read-back: the dated files never reach the
+`published` branch and nothing is read back from R2, so **what a run has
+published is read from its last base's listing** — the hours behind, and the
+hours ahead its cycle already gave — and NOAA is asked only for the base's
+own hour and the hours its cycle had not given. A cycle is taken once every
+hour of its day ahead is posted (NOAA posts a cycle's hours out of order);
+its second day is listed as far as it is posted without a gap, and filled as
+it posts. The read-only token D3 used is no longer read.
+
+One-way in the ordinary sense: `moreFrames` is a shape readers will code
+against, and `frames` stays as it was because readers already do.
