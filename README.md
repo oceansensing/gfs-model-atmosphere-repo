@@ -24,7 +24,7 @@ as a second opinion beside them.
 | `cloud-gfs.json` | total cloud cover, instantaneous | fraction |
 | `prate-gfs.json` | precipitation rate, instantaneous | mm/h |
 
-Global, 1440 x 721 from 90 N and 0 E; 41 MB a tree (measured 2026-09-27).
+Global, 1440 x 721 from 90 N and 0 E; 41 MB a set of bases (measured 2026-09-27).
 
 **Every product two days ahead and one behind, hourly** (D4, since
 2026-11-21; the wind and both air temperatures a day either side since
@@ -38,8 +38,10 @@ R2 keeps every dated file a base lists, and none is on the `published`
 branch.
 
 These products are published **operationally but not drawn on the website's
-map** — the owner's call, 2026-09-27. The map's status line still reports
-them when they fall behind, which is how their health stays visible.
+map** — the owner's call, 2026-09-27. R2 alone carries them, so this repository's Pages status names none of
+them: the map's status line and the site's watchdog see only whether the
+origin publishes. Their fates are in the status on R2 and on the
+`published` branch.
 
 ## Where the data comes from
 
@@ -53,13 +55,13 @@ its budget is in `pipeline/products.toml` and its traps in `CLAUDE.md`.
 The orchestrator (the site's private `pipeline/`), the fetchers and the
 published-file contract all come from `oceansensing.github.io`, checked out at
 run time. This repository carries `pipeline/products.toml` and its publish
-workflow, and nothing else executable. Each run publishes to GitHub Pages and
-to Cloudflare R2 from one build. Sibling repositories of the same model:
+workflow, and nothing else executable. Each run publishes the products to Cloudflare R2
+and the origin's status to GitHub Pages. Sibling repositories of the same model:
 none — an atmospheric model has no currents/fields split.
 
-**Which document gets what, and what "update docs" means across all
-twenty repositories, is the doctrine block at the top of `CLAUDE.md`** —
-the same text in all twenty, held equal by the site's `check:docs`.
+**Which document gets what, and what "update docs" means across every
+repository of this project, is the doctrine block at the top of `CLAUDE.md`** —
+the same text in each, held equal by the site's `check:docs`.
 
 ## Structure
 

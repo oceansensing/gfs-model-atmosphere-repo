@@ -87,3 +87,6 @@ line. Dependabot reads requirements files and never a workflow line: an
 inline pin elsewhere had carried `requests` 2.32.3, a version with two
 advisories, unflagged. The site's `check:docs` now refuses an inline package
 here. Confirmed by a dispatched run, green on build, Pages and R2.
+
+**Live since 2026-11-22**: run `44968278426` (00:46 UTC) the first on `a59f6ce`, green; the branch moved after R2
+from run `44985216191` (04:28 UTC, D4 as amended).
