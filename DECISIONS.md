@@ -69,3 +69,9 @@ it posts. The read-only token D3 used is no longer read.
 
 One-way in the ordinary sense: `moreFrames` is a shape readers will code
 against, and `frames` stays as it was because readers already do.
+
+*Amended that night*: **the branch moves only after R2 has the files it
+lists** (the workflow's `remember` job). As first landed the branch was
+pushed beside the R2 publish, so after a failed one the next run took the
+hours it listed as published and made none of them again before the model's
+next cycle. A run that does not deploy now leaves the branch where it was.
