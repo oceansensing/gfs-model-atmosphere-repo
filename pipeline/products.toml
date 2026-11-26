@@ -1,6 +1,7 @@
 # What this repository publishes: NOAA's Global Forecast System at 0.25
-# degree — 10 m wind, 2 m and 850 hPa air temperature, sea-level pressure,
-# 500 hPa height, total cloud and precipitation rate — from the open-data
+# degree — 10 m wind and (since 2026-11-26) its speed, 2 m and 850 hPa air
+# temperature, sea-level pressure, 500 hPa height, total cloud and
+# precipitation rate — from the open-data
 # bucket `noaa-gfs-bdp-pds`, published, not drawn on the website's map (the
 # owner, 2026-09-27): a second opinion beside the ECMWF layers. The fetcher
 # is the site's `scripts/fetch-gfs.py` (eccodes, as the ECMWF fetcher).
@@ -47,7 +48,7 @@ timeout_minutes = 20
 # step alone 1 min 14 s on a runner the same hour for the 104 messages of the
 # day either side); an hour on, 16 messages.
 [steps.gfs]
-cmd = ["python3", "scripts/fetch-gfs.py", "--only=wind-gfs,air-gfs,air850-gfs,mslp-gfs,hgt500-gfs,cloud-gfs,prate-gfs"]
+cmd = ["python3", "scripts/fetch-gfs.py", "--only=wind-gfs,wspd-gfs,air-gfs,air850-gfs,mslp-gfs,hgt500-gfs,cloud-gfs,prate-gfs"]
 lane = "noaa-gfs-bucket"
 timeout_minutes = 30
 
@@ -62,6 +63,23 @@ hours_ahead = 48
 hours_behind = 24
 max_age_hours = 4
 namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=wind-gfs"]
+
+# **The 10 m wind's speed** (2026-11-26): the magnitude of the same UGRD and
+# VGRD the wind publishes, in m/s, read from the wind's messages in the same
+# run, so the bucket sends nothing more. Like the four, its hours are all
+# `moreFrames` and its base lists no `frames`. About 5.3 MB an hour (measured
+# on the 00Z cycle of 2026-11-26), some 390 MB on R2 with its window full.
+[products.wspd-gfs]
+title = "GFS 10 m wind speed"
+step = "gfs"
+roots = ["wspd-gfs.json"]
+writes = ["wspd-gfs.json", "wspd-gfs.v*.json"]
+r2_only = true
+memory = "r2-kept"
+hours_ahead = 48
+hours_behind = 24
+max_age_hours = 4
+namespace = ["python3", "scripts/fetch-gfs.py", "--namespace", "--only=wspd-gfs"]
 
 [products.air-gfs]
 title = "GFS 2 m air temperature"
