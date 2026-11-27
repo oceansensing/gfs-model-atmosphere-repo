@@ -1,75 +1,12 @@
 # gfs-model-atmosphere-repo
 
-The GFS **atmosphere** — a data repository of the oceansensing ocean map system: its own
-Pages site, its own schedule, its own gigabyte, holding no code of its own.
+NOAA's Global Forecast System at 0.25°, as gridded data for the
+oceansensing.org ocean map: the 10 m wind, the 2 m and 850 hPa air
+temperatures, sea-level pressure, the 500 hPa height, total cloud cover and
+the precipitation rate, hourly from a day behind to two days ahead.
 
-**Built, rehearsed and taken live 2026-09-27** — published to Pages and R2,
-not drawn on the website's map; **to R2 alone since 2026-11-08** (D3), Pages
-carrying its status. `PLAN.md` is the founding plan;
-`CLAUDE.md` carries what must not be got wrong and the shared doc doctrine.
+Updated hourly.
 
-## What it publishes
+## Sources and credits
 
-NOAA's Global Forecast System at 0.25°: near-surface wind, air
-temperature and the other atmospheric fields the ECMWF layers already carry,
-as a second opinion beside them.
-
-| root | quantity | unit |
-| --- | --- | --- |
-| `wind-gfs.json` | 10 m wind, a vector pair | m s-1 (integers at 0.01) |
-| `air-gfs.json` | 2 m air temperature | degC |
-| `air850-gfs.json` | 850 hPa air temperature | degC |
-| `mslp-gfs.json` | sea-level pressure | hPa |
-| `hgt500-gfs.json` | 500 hPa geopotential height | gpm |
-| `cloud-gfs.json` | total cloud cover, instantaneous | fraction |
-| `prate-gfs.json` | precipitation rate, instantaneous | mm/h |
-
-Global, 1440 x 721 from 90 N and 0 E; 41 MB a set of bases (measured 2026-09-27).
-
-**Every product two days ahead and one behind, hourly** (D4, since
-2026-11-21; the wind and both air temperatures a day either side since
-2026-11-08, D3): each root lists the hours of its cycle to 48 ahead and the
-24 behind that earlier runs published, every other hour a file named for its
-time, `<root>.v<YYYYMMDDTHHMMZ>.json`. The wind's and the air temperatures'
-`frames` keep the day either side they listed before; every hour past it is
-in `moreFrames` — theirs from 25 to 48 ahead, and all of the other four's,
-whose bases list no `frames`. Some 3 GB with every window full, on R2 alone:
-R2 keeps every dated file a base lists, and none is on the `published`
-branch.
-
-These products are published **operationally but not drawn on the website's
-map** — the owner's call, 2026-09-27. R2 alone carries them, so this repository's Pages status names none of
-them: the map's status line and the site's watchdog see only whether the
-origin publishes. Their fates are in the status on R2 and on the
-`published` branch.
-
-## Where the data comes from
-
-**Source**: NOAA's open-data bucket on AWS, registry entry
-<https://registry.opendata.aws/noaa-gfs-bdp-pds/>, GRIB2 read by byte range
-through each file's `.idx`. The fetcher is the site's `scripts/fetch-gfs.py`;
-its budget is in `pipeline/products.toml` and its traps in `CLAUDE.md`.
-
-## How it runs
-
-The orchestrator (the site's private `pipeline/`), the fetchers and the
-published-file contract all come from `oceansensing.github.io`, checked out at
-run time. This repository carries `pipeline/products.toml` and its publish
-workflow, and nothing else executable. Each run publishes the products to Cloudflare R2
-and the origin's status to GitHub Pages. Sibling repositories of the same model:
-none — an atmospheric model has no currents/fields split.
-
-**Which document gets what, and what "update docs" means across every
-repository of this project, is the doctrine block at the top of `CLAUDE.md`** —
-the same text in each, held equal by the site's `check:docs`.
-
-## Structure
-
-```
-README.md       what this is
-CLAUDE.md       what must not be got wrong, and the shared doc doctrine
-PLAN.md         the founding plan and running record
-DECISIONS.md    dated one-way decisions, D1 onward
-pipeline/       products.toml, the declaration the orchestrator reads
-.github/        the publish workflow
-```
+NOAA's Global Forecast System, from NOAA's open data on AWS, registry entry <https://registry.opendata.aws/noaa-gfs-bdp-pds/>.
