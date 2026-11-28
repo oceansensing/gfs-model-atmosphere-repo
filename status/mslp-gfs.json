@@ -1,0 +1,30 @@
+{
+ "schema": 1,
+ "product": "mslp-gfs",
+ "title": "GFS sea-level pressure",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-28T20:29:25Z",
+ "updated": "2026-11-28T20:29:25Z",
+ "hour": "2026-11-28T20:00:00Z",
+ "modelRun": "2026-11-28T12:00:00Z",
+ "source": "NOAA NCEP GFS",
+ "hours": [
+  "2026-11-28T20:00:00Z"
+ ],
+ "files": {
+  "mslp-gfs.json": {
+   "bytes": 7072793,
+   "sha256": "3a8c2ec8da3513551ca893f0441516331fe49f6c66d8adc6520da550d465ce65"
+  },
+  "mslp-gfs.v20261128T1900Z.json": {
+   "bytes": 7061742
+  },
+  "mslp-gfs.v20261128T2000Z.json": {
+   "bytes": 7064618
+  },
+  "mslp-gfs.v20261130T2000Z.json": {
+   "bytes": 7051138
+  }
+ }
+}
